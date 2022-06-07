@@ -1,17 +1,16 @@
+//bai tap 1
+
 function toggleButton(idIcon, idContent) {
-
-
-    const content = document.querySelector(`${idContent}`)
-    const test = document.querySelector('#test')
-
-    
-    // if (content)
-    if (content.classList.contains('des'))
-    {
-       console.log(test.childNodes)
-    }
-    content.classList.toggle('show');
-
-    const arrow = document.querySelector(`${idIcon}`)
-    arrow.classList.toggle('rotate')
+  const content = document.querySelector(`${idContent}`);
+  const block = document.querySelectorAll("#test .block");
+  content.classList.toggle("show");
+  if (content.classList.contains("show")) {
+    block.forEach((item) => item.childNodes[3].classList.remove("show"));
+    content.classList.add("show");
+  }
+  const arrow = document.querySelector(`${idIcon}`);
+  arrow.classList.toggle("rotate");
 }
+//ket thuc bai tap 1
+
+//bai tap 2
