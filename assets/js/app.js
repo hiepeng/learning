@@ -13,4 +13,8 @@ function toggleButton(idIcon, idContent) {
 }
 //ket thuc bai tap 1
 
-//bai tap 2
+//popovers
+function popovers() {
+  const popovers1 = document.querySelector('#popovers');
+  popovers1.classList.toggle('show');
+}
