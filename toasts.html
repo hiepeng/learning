@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="toast" style="padding: 20px;" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <div class="box"></div>
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">X</button>
+        </div>
+        <div class="toast-body">
+            Hello, world! This is a toast message.
+        </div>
+    </div>
+
+    <div>
+        <button style="background-color: blue; color: white; padding: 10px; margin-top: 100px" onclick="funcToasts()">
+            show live toast
+        </button>
+        <div style="position: fixed; right: 50px; bottom: 50px;">
+            <div id="notification-toasts" class="des" style="border: 1px solid black;padding: 20px" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <div class="box"></div>
+                    <strong class="me-auto">Bootstrap</strong>
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">X</button>
+                </div>
+                <div class="toast-body">
+                    Hello, world! This is a toast message.
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

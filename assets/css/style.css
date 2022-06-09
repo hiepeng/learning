@@ -9,3 +9,38 @@
 .rotate {
   transform: rotate(90deg);
 }
+
+
+.box{
+  height: 10px;
+  width: 10px;
+  background-color: aqua;
+  border-radius: 2px;
+}
+
+.toast-header{
+  display: flex;
+  align-items: center;
+}
+
+.toast{
+  border: 1px solid #d3d3d3;
+  display: block;
+  width: 250px;
+}
+.me-auto{
+  margin-right: 20px;
+}
+.toast.close{
+  display: none;
+}
+
+
+.scrollspy .title {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.scrollspy .content {
+  padding: 15px 0;
+}
