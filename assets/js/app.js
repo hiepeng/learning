@@ -52,3 +52,46 @@ function funcToasts(){
 function funcDrop() {
     document.querySelector('#drop1').classList.toggle('show');
 }
+
+//dem so lan xuat hien trong chuoi
+// function test(){
+//   const chuoi = '4732847329847823974xinchaocacban';
+//   const tach = chuoi.split('');
+//   console.log(tach)
+//   const array = [];
+//   tach.forEach(item => {
+//     if(!array.includes(item)) array.push(item)
+//   })
+//   const arrayCount = new Array(array.length).fill(0);
+//   console.log(arrayCount)
+//   array.forEach((item, index) => {
+//     tach.forEach(value => {
+//       if(value === item) {
+//         arrayCount[index] ++;
+//       }
+//     })
+//   })
+//   console.log(array)
+//   console.log(arrayCount)
+// }
+// test();
+
+// reduce
+function inReduce() {
+  const strings = '123454test';
+  const arrayString = strings.split('').reduce(function(stringCount, currentString){
+    if(typeof stringCount[currentString] !== 'undefined'){
+      stringCount[currentString]++;
+      return stringCount;
+    } else {
+      stringCount[currentString] = 1;
+      return stringCount;
+    }
+  },{});
+  const demxong = [];
+  for(let x in arrayString){
+    demxong.push(x + ": " + arrayString[x]);
+  }
+console.log(demxong)
+}
+inReduce();
